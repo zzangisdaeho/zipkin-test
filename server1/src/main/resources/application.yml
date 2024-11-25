@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: server1
+
+
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0 # 100% ???
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
